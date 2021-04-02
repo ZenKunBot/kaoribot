@@ -1,4 +1,4 @@
-## <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="29px"> I'm Arnando
+## <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="29px"> I'm Kenma
 <p align="center">
 <img src="https://raw.githubusercontent.com/Arnando456/REM/main/assets/Arnando.jpg" width="230" height="230"/>
 </p>
@@ -7,7 +7,7 @@
 
 
 <p align="center">
-<a href="#"><img title="Sad Boy" src="https://img.shields.io/badge/ARNANDO-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+<a href="#"><img title="Sad Boy" src="https://img.shields.io/badge/kenma-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
 <a href="https://github.com/ZenKunBot"><img title="Author" src="https://img.shields.io/badge/AUTHOR-Kenma-orange.svg?style=for-the-badge&logo=github"></a>
