@@ -28,7 +28,7 @@
 ## Clone this project
 
 ```bash
-> git clone https://github.com/Arnando456/Rem
+> git clone https://github.com/ZenKunBot/kaori
 ```
 
 ## Install the dependencies:
@@ -36,7 +36,7 @@ Before running the below command, make sure you're in the project directory that
 you've just cloned!!
 
 ```bash
-> cd REM
+> cd kaori
 > bash install.sh
 ```
 
@@ -49,8 +49,8 @@ you've just cloned!!
 
 ## SOSIAL MEDIA ADMIN <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/powerup.gif" width="29px">
 
-* [`Youtube Admin`](https://youtube.com/channel/UCal0HWOurq6GIF4_z0N2B6Q)
-* [`WhatsApp Admin `](https://wa.me/+6281534162316)
+* [`Youtube Admin`]()
+* [`WhatsApp Admin `](https://wa.me/+6281216563395)
 * [`Group WhatsApp `](https://chat.whatsapp.com/Eb4niW86N3kHbMjgmdL4WU)
 ## THANKS TO <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Handshake.gif" width="60px">
 
