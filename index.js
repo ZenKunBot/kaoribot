@@ -60,9 +60,9 @@ const { removeBackgroundFromImageFile } = require('remove.bg')
 const { ind } = require('./language')
 const vcard = 'BEGIN:VCARD\n'//JANGAN DI GANTI ANJING
             + 'VERSION:3.0\n'//JANGAN DI GANTI ANJING,NTAR EROR
-            + 'FN:Owner Emelia\n' // GANTI NAMA LU BODOH
-            + 'ORG: REMBOT;\n'//GANTI NAMA BOT LUH BANGSAT
-            + 'TEL;type=CELL;type=VOICE;waid=6281534162316:+62 815-3416-2316\n' // GANTI NOMOR LU BEGONIAN
+            + 'FN:Owner Kenma\n' // GANTI NAMA LU BODOH
+            + 'ORG: Kaori;\n'//GANTI NAMA BOT LUH BANGSAT
+            + 'TEL;type=CELL;type=VOICE;waid=6283856061828:+62 838-5606-1828\n' // GANTI NOMOR LU BEGONIAN
             + 'END:VCARD'
 // UDAH SEGITU KONTOLL KEBAWAH BIARIN AJA
 const ngonsol = JSON.parse(fs.readFileSync('./settings/Rem.json'))
@@ -84,10 +84,10 @@ prefix = "#"
 blocked = []   
 limitawal = 1200
 memberlimit = 2
-fake = 'YDBOT-FIX-ANTIDELETE'
+fake = 'Kaori-FIX-ANTIDELETE'
 ator = 'SUBSCRIBE'
-namo = 'MrG{108P}*'
-cr = "~*SUBSCRIBE:MrG{108P}🍁~OWNER:Arnando🍁*"
+namo = 'Kenma Kun official*'
+cr = "~*SUBSCRIBE:Kenma Kun Official🍁~OWNER:shadam🍁*"
 // LOAD JSON
 const setiker = JSON.parse(fs.readFileSync('./strg/stik.json'))
 const _leveling = JSON.parse(fs.readFileSync('./database/group/leveling.json'))
@@ -442,7 +442,7 @@ console.log(banner.string)
 
    qrcode.generate(qr, { small: true })
 
-	console.log(color('[','white'), color('!','red'), color(']','white'), color(' SCAN QR MU <POWERED BY MrG{108P}*>'))
+	console.log(color('[','white'), color('!','red'), color(']','white'), color(' SCAN QR MU <POWERED BY Kaori*>'))
 
 })
 
@@ -452,7 +452,7 @@ console.log(banner.string)
 
 		fs.writeFileSync('./Rem.json', JSON.stringify(baby.base64EncodedAuthInfo(), null, '\t'))
 
-		info('2', 'MrG{108P}* Loading...')
+		info('2', 'KAORI* Loading...')
 
 	})
 
@@ -460,13 +460,13 @@ console.log(banner.string)
 
 	baby.on('connecting', () => {
 
-		start('2', 'MrG{108P}* Connecting...')
+		start('2', 'KAORI* Connecting...')
 
 	})
 
 	baby.on('open', () => {
 
-		success('2', 'MrG{108P}* Connected')
+		success('2', 'KAORI* Connected')
 
 	})
 
@@ -498,7 +498,7 @@ baby.on('group-participants-update', async (anu) => {
 
 				}
 
-				teks = `[ *WELCOME IN GC ${mdata.subject}* ] \n___________________________\n@${num.split('@')[0]} Intro/Dikick!!! \n➸ Nama : \n➸ Umur : \n➸ Askot : \n➸ Gender : \n➸ Udah Punya Doi/Blm: \n➸ Pap Muka dumlu!!! \n➸ Instagram? \n𝐒𝐚𝐯𝐞 𝐍𝐨𝐦𝐨𝐫 𝐀𝐃𝐌𝐈𝐍! \n *___________________________*\nJangan jadi kutu lomcat sayang!!  kalau mau makai sc gua,pw:Hartah tahta paha rikka`
+				teks = `[ *WELCOME IN GC ${mdata.subject}* ] \n___________________________\n@${num.split('@')[0]} Intro/Dikick!!! \n➸ Nama : \n➸ Umur : \n➸ Askot : \n➸ Gender : \n➸ Coli/Colmek Berapakali sehari?: \n➸ Pap Muka dumlu!!! \n➸ Instagram? \n𝐒𝐚𝐯𝐞 𝐍𝐨𝐦𝐨𝐫 𝐀𝐃𝐌𝐈𝐍! \n *___________________________*\nJangan jadi kutu lomcat sayang!!  Mengkontol`
 
 				let buff = await getBuffer(ppimg)
 
@@ -518,7 +518,7 @@ baby.on('group-participants-update', async (anu) => {
 
 				}
 
-				teks = `SELAMAT TINGGAL... @${num.split('@')[0]}👋* \n_Jasamu akan saya kubur dalam dalam_`
+				teks = `SELAMAT TINGGAL... @${num.split('@')[0]}👋* \n_Jan sering coly makanya_`
 
 				let buff = await getBuffer(ppimg)
 
@@ -855,25 +855,25 @@ function addMetadata(packname, author) {
                 if (mesejAnti.includes("://chat.whatsapp.com/")){
 		        if (!isGroup) return
 		        if (!isAntiLink) return
-		        if (isGroupAdmins) return reply('Admin Grup Mah Bebas:D')
+		        if (isGroupAdmins) return reply('KONTOL CHEAT ASW GA BISA DI KICK')
 		        baby.updatePresence(from, Presence.composing)
 		        if (mesejAnti.includes(",izinkak")) return reply("Iya kak jangan spam ya")
 		        var kic = `${sender.split("@")[0]}@s.whatsapp.net`
 		        reply(`Maaf kak ${sender.split("@")[0]} Grup ini anti link, siap siap kamu di kick`)
 		        setTimeout( () => {
-			        baby.groupRemove(from, [kic]).catch((e)=>{reply(`*NICO HARUS JADI ADMIN├в┬ЭтАФ*`)})
+			        baby.groupRemove(from, [kic]).catch((e)=>{reply(`*SAMYA HARUS JADI ADMIN|MENGKONTOL*`)})
 		        }, 3000)
 		        setTimeout( () => {
 			        baby.updatePresence(from, Presence.composing)
-			        reply("Hedsot....")
+			        reply("Kontol....")
 		        }, 2000)
 		        setTimeout( () => {
 			        baby.updatePresence(from, Presence.composing)
-			        reply("Bismillah...")
+			        reply("Sek tlah...")
 		        }, 1000)
 		        setTimeout( () => {
 			        baby.updatePresence(from, Presence.composing)
-			        reply("Ready?...")
+			        reply("Siap?...")
 		        }, 0)
 		  }               
 
@@ -1247,7 +1247,7 @@ shiz = `┏━━━━《 *${botName}*  シ︎ 》━━━━
 ┣ ❏ *Fadhill*
 ┣ ❏ *Ramlan*
 ┃
-┗━━━━《 Rem Bot -X シ︎ 》━━━━`
+┗━━━━《 Kaori Bot》━━━━`
 baby.sendMessage(from, buffer, image, { quoted: mek, caption: shiz })
 const menu2 = fs.readFileSync('./assest/menu2.mp3');
 baby.sendMessage(from, menu2, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
@@ -1486,7 +1486,7 @@ case 'afk'://UPDATE MR.108P
 //MAKER MENU\\
 case 'glowneon'://UPDATE MR.108P
 if (isLimit(sender)) return reply(ind.limitend(pusname))
-if (args.length < 1) return reply(`Contoh: ${prefix}glowneon Mr.108P`)
+if (args.length < 1) return reply(`Contoh: ${prefix}glowneon Kaori`)
 tekas = body.slice(10)
 reply(ind.wait())
 glown = await getBuffer(`https://videfikri.com/api/textmaker/glowingneon/?text=${tekas}`)
@@ -1495,7 +1495,7 @@ await limitAdd(sender)
 break
 case 'gsuggest'://UPDATE MR.108P
 if (isLimit(sender)) return reply(ind.limitend(pusname))
-if (args.length < 1) return reply(`Contoh: ${prefix}gsuggest Mr.108P/rem/bot`)
+if (args.length < 1) return reply(`Contoh: ${prefix}gsuggest Shadam/Kaori/bot`)
 du = `${body.slice(10)}`
 ted1 = du.split("/")[0];
 ted2 = du.split("/")[1];
@@ -1516,7 +1516,7 @@ await limitAdd(sender)
 break
 case 'lovemss'://UPDATE MR.108P
 if (isLimit(sender)) return reply(ind.limitend(pusname))
-  if (args.length < 1) return reply(`Contoh: ${prefix}lovemss ArnandoGanz`)
+  if (args.length < 1) return reply(`Contoh: ${prefix}lovemss KenmaGanz`)
 lop = body.slice(9)
 reply(ind.wait())
 lepms = await getBuffer(`https://videfikri.com/api/textmaker/lovemsg/?text=${lop}`)
@@ -1525,7 +1525,7 @@ await limitAdd(sender)
 break
 case 'mugflower'://UPDATE MR.108P
 if (isLimit(sender)) return reply(ind.limitend(pusname))
-  if (args.length < 1) return reply(`Contoh: ${prefix}mugflower ArnandoGanz`)
+  if (args.length < 1) return reply(`Contoh: ${prefix}mugflower KenmaGanz`)
 mug = body.slice(11)
 reply(ind.wait())
 mflowg = await getBuffer(`https://videfikri.com/api/textmaker/mugflower/?text=${mug}`)
@@ -1534,7 +1534,7 @@ await limitAdd(sender)
 break
 case 'narutobanner'://UPDATE MR.108P
   if (isLimit(sender)) return reply(ind.limitend(pusname))
-  if (args.length < 1) return reply(`Contoh: ${prefix}narutobanner ArnandoGanz`)
+  if (args.length < 1) return reply(`Contoh: ${prefix}narutobanner KenmaGanz`)
     nar = body.slice(14)
     reply(ind.wait())
     narba = await getBuffer(`https://videfikri.com/api/textmaker/narutobanner/?text=${nar}`)
@@ -1543,7 +1543,7 @@ case 'narutobanner'://UPDATE MR.108P
      break
      case 'battelfiel'://UPDATE MR.108P
   if (isLimit(sender)) return reply(ind.limitend(pusname))
-  if (args.length < 1) return reply(`Contoh: ${prefix}battelfiel ArnandoGanz`)
+  if (args.length < 1) return reply(`Contoh: ${prefix}battelfiel KenmaGanz`)
    du = `${body.slice(12)}`
   ted1 = du.split("/")[0];
   ted2 = du.split("/")[1];
@@ -1554,7 +1554,7 @@ case 'narutobanner'://UPDATE MR.108P
      break
 case '8bit'://UPDATE MR.108P//UPDATE MR108P
   if (isLimit(sender)) return reply(ind.limitend(pusname))
-  if (args.length < 1) return reply(`Contoh: ${prefix} 8bit ArnandoGanz`)
+  if (args.length < 1) return reply(`Contoh: ${prefix} 8bit KemmaGanz`)
    du = `${body.slice(5)}`
   ted1 = du.split("/")[0];
   ted2 = du.split("/")[1];
@@ -1598,7 +1598,7 @@ buffer1 = await getBuffer(anu.result.thumb)
 teks = `Judul : ${anu.result.title}
 Durasi : ${anu.result.duration}
 Quality : ${anu.result.quality}
-𝙏𝙪𝙣𝙜𝙜𝙪 𝙮𝙖 𝙠𝙖𝙠 :)
+*SABAR COK*:)
 Ni Biar Cepat :
 ${anu.result.download}`
 baby.sendMessage(from, buffer1, image, {quoted: mek, caption: teks})
@@ -2295,35 +2295,35 @@ if (isBanned) return reply(ind.baned())
 if (isLimit(sender)) return reply(ind.limitend(pusname))
 reply(ind.wait())
 buffer = await getBuffer(`https://api.zeks.xyz/api/bneon?apikey=apivinz&text=${body.slice(10)}`)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe kenma kun desu'})
 break
 case 'matrix'://UPDATE MR.108P ////UPDATE MR108P
 if (isBanned) return reply(ind.baned())
 if (isLimit(sender)) return reply(ind.limitend(pusname))
 reply(ind.wait())
 buffer = await getBuffer(`https://api.zeks.xyz/api/matrix?apikey=apivinz&text=${body.slice(8)}`)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe Kenma Kun Desu'})
 break
 case 'breakwall'://UPDATE MR.108P ////UPDATE MR108P
 if (isBanned) return reply(ind.baned())
 if (isLimit(sender)) return reply(ind.limitend(pusname))
 reply(ind.wait())
 buffer = await getBuffer(`https://api.zeks.xyz/api/breakwall?apikey=apivinz&text=${body.slice(11)}`)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe Kenma Kun Desu'})
 break
 case 'greenneon'://UPDATE MR.108P ////UPDATE MR108P
 if (isBanned) return reply(ind.baned())
 if (isLimit(sender)) return reply(ind.limitend(pusname))
 reply(ind.wait())
 buffer = await getBuffer(`https://api.zeks.xyz/api/gneon?apikey=apivinz&text=${body.slice(11)}`)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe Kenma Kun Desu'})
 break
 case 'dropwater'://UPDATE MR.108P ////UPDATE MR108P
 if (isBanned) return reply(ind.baned())
 if (isLimit(sender)) return reply(ind.limitend(pusname))
 reply(ind.wait())
 buffer = await getBuffer(`https://api.zeks.xyz/api/dropwater?apikey=apivinz&text=${body.slice(11)}`)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe Kenmakun desu'})
 break
 case 'wolflogo'://UPDATE MR.108P ////UPDATE MR108P
 if (isBanned) return reply(ind.baned())
@@ -2333,7 +2333,7 @@ wolflogo = body.slice(10)
 wolf = wolflogo.split("|")[0];
 logo = wolflogo.split("|")[1];
 buffer = await getBuffer(`https://api.zeks.xyz/api/wolflogo?apikey=apivinz&text1=${wolf}&text2=${logo}`)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe Kenmakun Desu'})
 break
 case 'flowertext'://UPDATE MR.108P ////UPDATE MR108P
 if (isBanned) return reply(ind.baned())
@@ -2341,7 +2341,7 @@ if (isLimit(sender)) return reply(ind.limitend(pusname))
 reply(ind.wait())
 anu = await fetchJson(`https://api.zeks.xyz/api/flowertext?text=${body.slice(12)}&apikey=apivinz`, {method: 'get'})
 buffer = await getBuffer(anu.result)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe Kenma'})
 break
 case 'crosslogo'://UPDATE MR.108P ////UPDATE MR108P
 if (isBanned) return reply(ind.baned())
@@ -2349,7 +2349,7 @@ if (isLimit(sender)) return reply(ind.limitend(pusname))
 reply(ind.wait())
 anu = await fetchJson(`https://api.zeks.xyz/api/crosslogo?text=${body.slice(11)}&apikey=apivinz`, {method: 'get'})
 buffer = await getBuffer(anu.result)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe kenma'})
 break
 case 'silktext'://UPDATE MR.108P ////UPDATE MR108P
 if (isBanned) return reply(ind.baned())
@@ -2357,7 +2357,7 @@ if (isLimit(sender)) return reply(ind.limitend(pusname))
 reply(ind.wait())
 anu = await fetchJson(`https://api.zeks.xyz/api/silktext?text=${body.slice(10)}&apikey=apivinz`, {method: 'get'})
 buffer = await getBuffer(anu.result)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe kemma'})
 break
 case 'flametext'://UPDATE MR.108P ////UPDATE MR108P
 if (isBanned) return reply(ind.baned())
@@ -2365,7 +2365,7 @@ if (isLimit(sender)) return reply(ind.limitend(pusname))
 reply(ind.wait())
 anu = await fetchJson(`https://api.zeks.xyz/api/flametext?text=${body.slice(11)}&apikey=apivinz`, {method: 'get'})
 buffer = await getBuffer(anu.result)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe '})
 break
 case 'glowtext'://UPDATE MR.108P ////UPDATE MR108P
 if (isBanned) return reply(ind.baned())
@@ -2373,7 +2373,7 @@ if (isLimit(sender)) return reply(ind.limitend(pusname))
 reply(ind.wait())
 anu = await fetchJson(`https://api.zeks.xyz/api/glowtext?text=${body.slice(10)}&apikey=apivinz`, {method: 'get'})
 buffer = await getBuffer(anu.result)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe '})
 break
 case 'smoketext'://UPDATE MR.108P ////UPDATE MR108P
 if (isBanned) return reply(ind.baned())
@@ -2381,7 +2381,7 @@ if (isLimit(sender)) return reply(ind.limitend(pusname))
 reply(ind.wait())
 anu = await fetchJson(`https://api.zeks.xyz/api/smoketext?text=${body.slice(11)}&apikey=apivinz`, {method: 'get'})
 buffer = await getBuffer(anu.result)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe '})
 break
 case 'pubglogo'://UPDATE MR.108P ////UPDATE MR108P
 if (isBanned) return reply(ind.baned())
@@ -2392,7 +2392,7 @@ wolf = wolflogo.split("|")[0];
 logo = wolflogo.split("|")[1];
 anu = await fetchJson(`https://api.zeks.xyz/api/pubglogo?text1=${wolf}&text2=${logo}&apikey=apivinz`, {method: 'get'})
 buffer = await getBuffer(anu.result)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe M'})
 break
 case 'skytext'://UPDATE MR.108P ////UPDATE MR108P
 if (isBanned) return reply(ind.baned())
@@ -2400,7 +2400,7 @@ if (isLimit(sender)) return reply(ind.limitend(pusname))
 reply(ind.wait())
 anu = await fetchJson(`https://api.zeks.xyz/api/skytext?text=${body.slice(9)}&apikey=apivinz`, {method: 'get'})
 buffer = await getBuffer(anu.result)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe '})
 break
 case 'cslogo'://UPDATE MR.108P ////UPDATE MR108P
 if (isBanned) return reply(ind.baned())
@@ -2408,7 +2408,7 @@ if (isLimit(sender)) return reply(ind.limitend(pusname))
 reply(ind.wait())
 anu = await fetchJson(`https://api.zeks.xyz/api/cslogo?text=${body.slice(8)}&apikey=apivinz`, {method: 'get'})
 buffer = await getBuffer(anu.result)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe '})
 break
 //photo funia
 case 'lighttext'://UPDATE MR.108P ////UPDATE MR108P
@@ -2417,7 +2417,7 @@ if (isLimit(sender)) return reply(ind.limitend(pusname))
 reply(ind.wait())
 anu = await fetchJson(`https://api.zeks.xyz/api/lithgtext?text=${body.slice(11)}&apikey=apivinz`, {method: 'get'})
 buffer = await getBuffer(anu.result)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe P'})
 break
 case 'retrotext'://UPDATE MR.108P ////UPDATE MR108P
 if (isBanned) return reply(ind.baned())
@@ -2429,7 +2429,7 @@ logo = wolflogo.split("|")[1];
 retro = wolflogo.split("|")[2];
 anu = await fetchJson(`https://api.zeks.xyz/api/retro?text1=${wolf}&text2=${logo}&text3=${retro}&apikey=apivinz`, {method: 'get'})
 buffer = await getBuffer(anu.result)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe '})
 break
 case 'crismes'://UPDATE MR.108P ////UPDATE MR108P
 if (isBanned) return reply(ind.baned())
@@ -2437,7 +2437,7 @@ if (isLimit(sender)) return reply(ind.limitend(pusname))
 reply(ind.wait())
 anu = await fetchJson(`https://api.zeks.xyz/api/crismes?text=${body.slice(10)}&apikey=apivinz`, {method: 'get'})
 buffer = await getBuffer(anu.result)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe P'})
 break
 case 'snowwrite'://UPDATE MR.108P ////UPDATE MR108P
 if (isBanned) return reply(ind.baned())
@@ -2448,7 +2448,7 @@ wolf = wolflogo.split("|")[0];
 logo = wolflogo.split("|")[1];
 anu = await fetchJson(`https://api.zeks.xyz/api/snowwrite?text1=${wolf}&text2=${logo}&apikey=apivinz`, {method: 'get'})
 buffer = await getBuffer(anu.result)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe P'})
 break
 case 'watercolor'://UPDATE MR.108P ////UPDATE MR108P
 if (isBanned) return reply(ind.baned())
@@ -2459,21 +2459,21 @@ wolf = wolflogo.split("|")[0];
 logo = wolflogo.split("|")[1];
 anu = await fetchJson(`https://api.zeks.xyz/api/watercolour?text1=${wolf}&text2=${logo}&apikey=apivinz`, {method: 'get'})
 buffer = await getBuffer(anu.result)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe P'})
 break
 case 'firework'://UPDATE MR.108P ////UPDATE MR108P
 if (isBanned) return reply(ind.baned())
 if (isLimit(sender)) return reply(ind.limitend(pusname))
 reply(ind.wait())
 buffer = await getBuffer(`https://api.zeks.xyz/api/tfire?text=${body.slice(10)}&apikey=apivinz`)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe 8P'})
 break
 case 'sandwrite'://UPDATE MR.108P ////UPDATE MR108P
 if (isBanned) return reply(ind.baned())
 if (isLimit(sender)) return reply(ind.limitend(pusname))
 reply(ind.wait())
 buffer = await getBuffer(`https://api.zeks.xyz/api/sandw?apikey=apivinz&text=${body.slice(11)}`)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe 8P'})
 break
 //Ephoto
 case 'epep'://UPDATE MR.108P ////UPDATE MR108P
@@ -2481,21 +2481,21 @@ if (isBanned) return reply(ind.baned())
 if (isLimit(sender)) return reply(ind.limitend(pusname))
 reply(ind.wait())
 buffer = await getBuffer(`https://api.zeks.xyz/api/epep?text=${body.slice(6)}&apikey=apivinz`)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe kenma'})
 break
 case 'gplaybutton'://UPDATE MR.108P
 if (isBanned) return reply(ind.baned())
 if (isLimit(sender)) return reply(ind.limitend(pusname))
 reply(ind.wait())
 buffer = await getBuffer(`https://api.zeks.xyz/api/gplaybutton?text=${body.slice(13)}&apikey=apivinz`)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe kenma'})
 break
 case 'splaybutton'://UPDATE MR.108P ////UPDATE MR108P
 if (isBanned) return reply(ind.baned())
 if (isLimit(sender)) return reply(ind.limitend(pusname))
 reply(ind.wait())
 buffer = await getBuffer(`https://api.zeks.xyz/api/gplaybutton?text=${body.slice(13)}&apikey=apivinz`)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe kenma'})
 break
 //text pro
 case 'text3dbox'://UPDATE MR.108P ////UPDATE MR108P
@@ -2503,14 +2503,14 @@ if (isBanned) return reply(ind.baned())
 if (isLimit(sender)) return reply(ind.limitend(pusname))
 reply(ind.wait())
 buffer = await getBuffer(`https://api.zeks.xyz/api/text3dbox?apikey=apivinz&text=${body.slice(11)}`)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe kenma'})
 break
 case 'text3d'://UPDATE MR.108P ////UPDATE MR108P
 if (isBanned) return reply(ind.baned())
 if (isLimit(sender)) return reply(ind.limitend(pusname))
 reply(ind.wait())
 buffer = await getBuffer(`https://api.zeks.xyz/api/text3d?text=${body.slice(8)}&apikey=apivinz`)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe kemma'})
 break
 case 'phlogo'://UPDATE MR.108P ////UPDATE MR108P
 if (isBanned) return reply(ind.baned())
@@ -2520,28 +2520,28 @@ wolflogo = body.slice(8)
 wolf = wolflogo.split("|")[0];
 logo = wolflogo.split("|")[1];
 buffer = await getBuffer(`https://api.zeks.xyz/api/phlogo?text1=${wolf}&text2=${logo}&apikey=apivinz`)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe kenma'})
 break
 case 'bplogo'://UPDATE MR.108P ////UPDATE MR108P
 if (isBanned) return reply(ind.baned())
 if (isLimit(sender)) return reply(ind.limitend(pusname))
 reply(ind.wait())
 buffer = await getBuffer(`https://api.zeks.xyz/api/logobp?text=${body.slice(8)}&apikey=apivinz`)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe kenma'})
 break
 case 'leavestext'://UPDATE MR.108P ////UPDATE MR108P
 if (isBanned) return reply(ind.baned())
 if (isLimit(sender)) return reply(ind.limitend(pusname))
 reply(ind.wait())
 buffer = await getBuffer(`https://api.zeks.xyz/api/leavest?text=${body.slice(12)}&apikey=apivinz`)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe kenma'})
 break
 case 'textlight'://UPDATE MR.108P ////UPDATE MR108P
 if (isBanned) return reply(ind.baned())
 if (isLimit(sender)) return reply(ind.limitend(pusname))
 reply(ind.wait())
 buffer = await getBuffer(`https://api.zeks.xyz/api/tlight?text=${body.slice(11)}&apikey=apivinz`)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe kenma'})
 break
 case 'glitchtext '://UPDATE MR.108P ////UPDATE MR108P
 if (isBanned) return reply(ind.baned())
@@ -2551,7 +2551,7 @@ wolflogo = body.slice(11)
 wolf = wolflogo.split("|")[0];
 logo = wolflogo.split("|")[1];
 anu = await fetchJson(`https://api.zeks.xyz/api/gtext?text1=${wolf}&text2=${logo}&apikey=apivinz`)
-baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe MR108P'})
+baby.sendMessage(from, buffer, image, {quoted: mek, caption: 'Subscribe kenmaP'})
 break
 case 'ytmp3'://UPDATE MR.108P//UPDATE MR105P
                     if (args.length == 0) return reply(`Example: ${prefix + command} https://www.youtube.com/watch?v=qZIQAk-BUEc`)
@@ -3344,7 +3344,7 @@ case 'welcome':
 					if (!isGroupAdmins) return reply(ind.admin())
 					if (args.length < 1) return reply('Ekhemm >_<')
 					if (Number(args[0]) === 1) {
-						if (isWelkom) return reply('*FITUR WELCOME SUDAH AKTIF KAK*')
+						if (isWelkom) return reply('*FITUR WELCOME AKTIF COK*')
 						welkom.push(from)
 						fs.writeFileSync('./database/group/welkom.json', JSON.stringify(welkom))
 						reply('*「SUKSES」 MENGAKTIFKAN FITUR WELCOME DI GROUP*')
@@ -3373,7 +3373,7 @@ anu = await fetchJson(`https://api.shizukaa.xyz/api/blackpink?apikey=itsmeiky633
 					if (!isOwner) return reply(ind.ownerb())
 					if (args.length < 1) return reply('Ekhemm >_<')
 					if (Number(args[0]) === 1) {
-						if (isEventon) return reply('*FITUR EVENT SUDAH AKTIF BOS*')
+						if (isEventon) return reply('*FITUR EVENT AKTIF DANDASAMA*')
 						event.push(from)
 						fs.writeFileSync('./database/group/event.json', JSON.stringify(event))
 						reply('*「SUKSES」 MENGAKTIFKAN EVENT DI GROUP*')
